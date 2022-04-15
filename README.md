@@ -1,10 +1,10 @@
-Server Side
+## Serve API
 
 /auth0-express-js-sample
 
 npm start (serving up API on port 6060)
 
-Client side
+## Serve Client and Node.js Server
 
 /auth0-express-pug-sample (two terminals, one for front end one for node.js back end)
 
