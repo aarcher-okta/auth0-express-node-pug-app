@@ -4,6 +4,6 @@
 
 npm start (serving up API on port 6060)
 
-## Serve Client and Node.js Server
+## Serve Client
 
 npm run ui (port 4040)
