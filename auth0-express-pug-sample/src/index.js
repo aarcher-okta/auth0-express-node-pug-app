@@ -63,6 +63,7 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+// external application route
 app.get('/vuespa', requiresAuth(), (req, res) => {
   res.redirect('http:localhost:3030', {
     user: req.oidc.user,
