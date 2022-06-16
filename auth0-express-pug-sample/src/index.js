@@ -63,6 +63,12 @@ app.get('/', (req, res) => {
   res.render('home');
 });
 
+app.get('/vuespa', requiresAuth(), (req, res) => {
+  res.redirect('http:localhost:3030', {
+    user: req.oidc.user,
+  });
+})
+
 // > Profile
 
 app.get('/profile', requiresAuth(), (req, res) => {
@@ -171,6 +177,7 @@ app.get('/logout/:page/:section?', (req, res) => {
     returnTo: page,
   });
 });
+
 /**
  * Server Activation
  */

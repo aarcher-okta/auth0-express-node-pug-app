@@ -1,10 +1,12 @@
 //- include ./signup-button
 include ./login-button
 include ./logout-button
+include ./vuespa
 
 mixin authentication-button(isAuthenticated)
   if isAuthenticated
-    +logout-button
+    +logout-button 
+    +vuespa
   else
     +login-button
     //- +signup-button
